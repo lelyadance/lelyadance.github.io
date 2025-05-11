@@ -40,10 +40,28 @@ body {
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hero-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: fall 1s forwards;
+  animation-delay: calc(0.1s * var(--i)); /* Задержка для каждой буквы */
+}
+
+@keyframes fall {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .socials a {
   display: inline-flex;
