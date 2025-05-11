@@ -114,26 +114,46 @@ body {
   transform: scale(1.1);
 }
 
-.nav {
-  margin-top: 2rem;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* чтобы на маленьких экранах переносилось */
 }
 
-.nav a {
-  color: white;
+nav a {
+  position: relative;
   text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  background: rgba(255,255,255,0.2);
-  transition: background 0.3s;
-  z-index: 10;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ffffff, #7a7469);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
 }
 
-.nav a:hover {
-  background: rgba(255,255,255,0.4);
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffffff, #7a7469);
+  transition: width 0.3s ease;
+  border-radius: 2px;
 }
 
+nav a:hover {
+  transform: translateY(-3px);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
 .section {
   max-width: 900px;
   margin: auto;
@@ -286,7 +306,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 1.5rem;
-  background: -webkit-linear-gradient(45deg, #8e44ad, #f39c12); /* Градиентный фон для текста */
+  background: -webkit-linear-gradient(45deg, #ff4f8b, #ce1553); /* Градиентный фон для текста */
   -webkit-background-clip: text;
   color: transparent;
   padding: 5px 0;
@@ -443,9 +463,16 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .nav a {
-    display: block;
-    margin: 0.5rem auto;
+   nav {
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  nav a::after {
+    height: 2px;
   }
 
   .logos img {
