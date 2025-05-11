@@ -377,7 +377,17 @@ body {
     transform: translateY(0);
   }
 }
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2.5rem; /* Уменьшаем размер шрифта для экранов от 1200px */
+  }
+}
 
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem; /* Для планшетов */
+  }
+}
 @media (max-width: 768px) {
   .nav a {
     display: block;
