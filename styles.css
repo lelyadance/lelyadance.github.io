@@ -395,11 +395,11 @@ body {
   }
 
   .logos img {
-    height: 125px;
+    height: 100px;
     width: auto;
   }
   .logos img:nth-child(1) {
-    height: 200px; /* Задай нужный размер для третьего логотипа */
+    height: 150px; /* Задай нужный размер для третьего логотипа */
     width: auto;
     
   }
