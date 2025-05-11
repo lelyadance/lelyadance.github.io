@@ -190,7 +190,9 @@ body {
   color: #f4f4f4;
   margin-bottom: 1.5rem;
 }
-
+#location strong{
+  color: #ffffff;
+}
 .intro-text {
   font-size: 1.4rem;
   margin-bottom: 2rem;
