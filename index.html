@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛІТНІЙ КОНЦЕРТ «ПЛАНЕТА ЗІРОК»</title>
+  <!-- Включаем шрифт Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="hero">
+        <h1 class="hero-title">ЛІТНІЙ КОНЦЕРТ «ПЛАНЕТА ЗІРОК»</h1>
+        <div class="logos">
+          <img src="logo1.png" alt="Studio 1">
+          <img src="logo2.png" alt="Studio 2">
+          <img src="logo3.png" alt="Studio 3">
+        </div>
+        <nav class="nav">
+          <a href="#about-event">Про подію</a>
+          <a href="#program">Aufführung & Programm</a>
+          <a href="#location">Ort & Karte</a>
+        </nav>
+      </header>
+      
+      <section id="about-event" class="section fade-in">
+        <h2>Запрошуємо вас на літній концерт «Планета зірок»</h2>
+        <p class="intro-text">Незабутню подорож на особливу планету, де кожен сяє своїм талантом, своїми мріями, своїм внутрішнім світлом.</p>
+        
+        <div class="event-details">
+          <div class="event-item">
+            <strong>Коли?</strong>
+            <p>7 червня</p>
+          </div>
+          <div class="event-item">
+            <strong>О котрій?</strong>
+            <p>16:00</p>
+          </div>
+          <div class="event-item">
+            <strong>Де?</strong>
+            <p>Kleine Flurstraße 11, 42275 Wuppertal</p>
+          </div>
+        </div>
+        
+        <h3>Хто виступає?</h3>
+        <p>Танцювальна студія «LELYA DANCE» та вокальна студія «MUSIC WORLD» на базі ферайну «FANTASY»</p>
+        
+        <div class="event-description">
+          <p>«Планета зірок» — це місце, де музика і танець об’єднують серця, де зустрічаються маленькі й дорослі, вокальні і танцювальні таланти, щоб подарувати вам радість, енергію й натхнення!</p>
+          <p>Наш концерт приурочений до Дня захисту дітей — це свято життя, мистецтва, сили, єдності й надії. Нехай кожна пісня й кожен танець запалюють нову зірку на нашій Планеті зірок!</p>
+        </div>
+        
+        <div class="free-entry">
+          <p><strong>Вхід безкоштовний!</strong></p>
+        </div>
+        
+        <p class="closing-text">«Планета зірок» — вокал і танець на одній орбіті, сузір’я дитячих і дорослих мрій…</p>
+      </section>
+      
+  
+  
+
+  <section id="program" class="section fade-in">
+    <h2>Aufführung & Programm</h2>
+    <img src="afisha.jpg" alt="Aufführung Programm" class="poster">
+  </section>
+
+  <section id="location" class="section fade-in">
+    <h2>Ort & Karte</h2>
+    <p><strong>Kleine Flurstraße 11, 42275 Wuppertal</strong></p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.1239382655015!2d7.192115176655038!3d51.26666117234666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8e4e52c90d7b5%3A0xdea06cdd0b2defea!2sKleine%20Flurstra%C3%9Fe%2011%2C%2042275%20Wuppertal%2C%20Deutschland!5e0!3m2!1sde!2sde!4v1715457642523!5m2!1sde!2sde" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Folgen Sie uns:</p>
+    <div class="socials">
+        <a href="https://www.instagram.com/lelyadance.studio">
+            <img src="icon_ig.svg" alt="Inst. @lelyadance.studio">
+            <span>@lelyadance.studio</span>
+          </a>
+          
+          <a href="https://www.instagram.com/fantasy.zentrum">
+            <img src="icon_ig.svg" alt="Inst. @fantasy.zentrum">
+            <span>@fantasy.zentrum</span>
+          </a>
+          
+          <a href="https://www.instagram.com/music.world.nrw">
+            <img src="icon_ig.svg" alt="Inst. @music.world.nrw">
+            <span>@music.world.nrw</span>
+          </a>
+          
+    </div>
+    <p>&copy; 2025 Sommerkonzert Tanzstudio</p>
+  </footer>
+
+<script>
+// Smooth scroll animation
+const navLinks = document.querySelectorAll('.nav a');
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Fade-in animation on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('in-view');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(section => {
+  observer.observe(section);
+});
+</script>
+
+</body>
+</html>
