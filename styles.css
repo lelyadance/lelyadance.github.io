@@ -265,11 +265,11 @@ body {
   }
 
   .logos img {
-    height: 120px;
-    width: 120px;
+    height: 135px;
+    width: auto;
   }
   .logos img:nth-child(3) {
-    height: 85px; /* Задай нужный размер для третьего логотипа */
+    height: 75px; /* Задай нужный размер для третьего логотипа */
     width: auto;
     
   }
