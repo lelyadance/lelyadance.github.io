@@ -78,6 +78,11 @@ body {
   transition: transform 0.3s;
   object-fit: cover;  
 }
+.logos img:nth-child(1) {
+  height: 300px; /* Задай нужный размер для третьего логотипа */
+  width: auto;
+  
+}
 .logos img:nth-child(3) {
   height: 150px; /* Задай нужный размер для третьего логотипа */
   width: auto;
