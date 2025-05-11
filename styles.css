@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   margin: 0;
@@ -216,9 +214,7 @@ body {
 
 .event-item strong {
   font-size: 1.1rem;
-  background: -webkit-linear-gradient(45deg, #8e44ad, #f39c12);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff017; 
 }
 
 .event-item p {
