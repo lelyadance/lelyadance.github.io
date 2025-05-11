@@ -246,7 +246,7 @@ body {
 }
 
 .fade-in {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(30px);
   animation: fadeIn 1s forwards; /* Плавное появление */
 }
@@ -265,11 +265,11 @@ body {
   }
 
   .logos img {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
   }
   .logos img:nth-child(3) {
-    height: 65px; /* Задай нужный размер для третьего логотипа */
+    height: 85px; /* Задай нужный размер для третьего логотипа */
     width: auto;
     
   }
