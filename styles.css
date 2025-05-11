@@ -399,7 +399,7 @@ body {
     width: auto;
   }
   .logos img:nth-child(1) {
-    height: 150px; /* Задай нужный размер для третьего логотипа */
+    height: 200px; /* Задай нужный размер для третьего логотипа */
     width: auto;
     
   }
