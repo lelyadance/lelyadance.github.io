@@ -100,7 +100,34 @@
     <p>&copy; 2025 Sommerkonzert Tanzstudio</p>
   </footer>
 
+<script>
+// Smooth scroll animation (только для ссылок на секции)
+const navLinks = document.querySelectorAll('.nav a');
 
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    const href = link.getAttribute('href');
+    // Проверяем, начинается ли href с "#" и есть ли элемент
+    if (href && href.startsWith('#') && document.querySelector(href)) {
+      e.preventDefault();
+      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+// Fade-in animation on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('in-view');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(section => {
+  observer.observe(section);
+});
+</script>
 
 </body>
 </html>
