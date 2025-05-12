@@ -10,7 +10,7 @@ body {
   background: linear-gradient(135deg, #0d0d2b, #1b0044, #32005a);
 }
 .lang-switcher {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   display: inline-flex;
