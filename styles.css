@@ -7,7 +7,37 @@ body {
   background: #0d0d2b; /* deep space blue */
   background: linear-gradient(135deg, #0d0d2b, #1b0044, #32005a);
 }
+.lang-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-flex;
+  border: 2px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  z-index: 1000; /* поверх всего */
+  font-family: 'Poppins', sans-serif;
+}
 
+.lang-switcher a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.lang-switcher a:not(.active-lang):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-switcher .active-lang {
+  background-color: #4b0082;
+  color: #ffffff;
+  font-weight: bold;
+  border-left: 1px solid #444;
+}
 .hero {
   background: linear-gradient(135deg, #1d2671, #c33764);
   color: white;
@@ -540,6 +570,16 @@ nav a:hover::after {
 
   .social-column i {
     font-size: 1.8rem;
+  }
+
+  .lang-switcher {
+    top:1%;
+    gap: 8px;
+  }
+
+  .lang-switcher a {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
 
