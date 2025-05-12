@@ -129,10 +129,27 @@ nav a {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #ffffff, #7a7469);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff; /* светло-золотой */
   transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  z-index: 0;
+  background: none;
+  -webkit-text-fill-color: #ffffff; /* для совместимости */
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover::before {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 nav a::after {
@@ -142,7 +159,7 @@ nav a::after {
   bottom: -6px;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, #ffffff, #7a7469);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -464,15 +481,15 @@ nav a:hover::after {
 }
 @media (max-width: 768px) {
   nav {
-    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   nav a {
-    font-size: 1.2rem;
-  }
-
-  nav a::after {
-    height: 2px;
+    width: 100%;
+    max-width: 250px; /* Ограничиваем, чтобы плитка не была слишком широкой */
+    text-align: center;
   }
 
   .logos img {
