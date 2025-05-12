@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛІТНІЙ КОНЦЕРТ «ПЛАНЕТА ЗІРОК»</title>
+  <!-- Включаем шрифт Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="C:/Users/isych/Desktop/lelyadance/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="C:/Users/isych/Desktop/lelyadance/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="C:/Users/isych/Desktop/lelyadance/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="C:/Users/isych/Desktop/lelyadance/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="C:/Users/isych/Desktop/lelyadance/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="C:/Users/isych/Desktop/lelyadance/img/favicon-16x16.png">
+<link rel="manifest" href="./img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="C:/Users/isych/Desktop/lelyadance/img/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Базові мета-теги -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sommerkonzert Wuppertal — незабутня подія з музикою, танцями та творчістю. Приєднуйтесь до нас!">
+  <meta name="keywords" content="Sommerkonzert, Wuppertal, концерт, музика, танці, фестиваль, Леляданс, Fantasy Zentrum, Music World NRW">
+  <meta name="author" content="Команда Sommerkonzert Wuppertal">
+
+<!-- Open Graph (для Facebook та соцмереж) -->
+  <meta property="og:title" content="Sommerkonzert Wuppertal">
+  <meta property="og:description" content="Незабутнє музичне свято у Вупперталі!">
+  <meta property="og:image" content="C:/Users/isych/Desktop/lelyadance/afisha.jpg"> <!-- замініть на своє зображення -->
+  <meta property="og:url" content="https://lelyadance.github.io">
+  <meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sommerkonzert Wuppertal">
+  <meta name="twitter:description" content="Незабутнє музичне свято у Вупперталі!">
+  <meta name="twitter:image" content="C:/Users/isych/Desktop/lelyadance/afisha.jpg"> <!-- замініть на своє зображення -->
+
+<!-- Канонічна URL-адреса -->
+  <link rel="canonical" href="https://lelyadance.github.io">
+</head>
+<body>
+   <div class="lang-switcher">
+  <a href="C:/Users/isych/Desktop/lelyadance/index.html" >UA</a>
+  <a href="C:/Users/isych/Desktop/lelyadance/de/index.html" class="active-lang">DE</a>
+   </div>
+
+
+    <header class="hero">
+      <h1 class="hero-title">
+        <span style="--i: 0">S</span> 
+        <span style="--i: 1">O</span>
+        <span style="--i: 2">M</span>
+        <span style="--i: 3">M</span>
+        <span style="--i: 4">E</span>
+        <span style="--i: 5">R</span>
+        <span style="--i: 6">K</span>
+        <span style="--i: 7">O</span>
+        <span style="--i: 8">N</span>
+        <span style="--i: 9">Z</span>
+        <span style="--i: 10">E</span>
+        <span style="--i: 11">R</span>
+        <span style="--i: 12">T</span>
+        <span style="--i: 13"> </span>
+        <span style="--i: 14">„</span>
+        <span style="--i: 15">P</span>
+        <span style="--i: 16">L</span>
+        <span style="--i: 17">A</span>
+        <span style="--i: 18">N</span>
+        <span style="--i: 19">E</span>
+        <span style="--i: 20">T</span>
+        <span style="--i: 21"> </span>
+        <span style="--i: 22">D</span>
+        <span style="--i: 23">E</span>
+        <span style="--i: 24">R</span>
+        <span style="--i: 25"> </span>
+        <span style="--i: 26">S</span>
+        <span style="--i: 27">T</span>
+        <span style="--i: 28">E</span>
+        <span style="--i: 29">R</span>
+        <span style="--i: 30">N</span>
+        <span style="--i: 31">E</span>
+        <span style="--i: 32">“</span>
+      </h1>
+        <div class="logos">
+          <img src="C:/Users/isych/Desktop/lelyadance/logo1.png" alt="Studio 1">
+          <img src="C:/Users/isych/Desktop/lelyadance/logo2.png" alt="Studio 2">
+          <img src="C:/Users/isych/Desktop/lelyadance/logo3.png" alt="Studio 3">
+        </div>
+        <nav class="nav">
+          <a href="#about-event">Veranstaltung</a>
+          <a href="#program">Aufführung & Programm</a>
+          <a href="#location">Ort & Karte</a>
+        </nav>
+      </header>
+      
+      <section id="about-event" class="section fade-in">
+        <h2>Wir laden Sie herzlich zum Sommerkonzert „Planet der Sterne“ ein.</h2>
+        <p class="intro-text">Eine unvergessliche Reise zu einem besonderen Planeten, auf dem jeder mit seinem Talent, seinen Träumen und seinem inneren Licht erstrahlt.</p>
+        
+        <div class="event-details">
+          <div class="event-item">
+            <strong>Wann?</strong>
+            <p>7. Juni</p>
+          </div>
+          <div class="event-item">
+            <strong>Um wie viel Uhr?</strong>
+            <p>16:00 Uhr</p>
+          </div>
+          <div class="event-item">
+            <strong>Wo?</strong>
+            <p>Kleine Flurstraße 11, 42275 Wuppertal</p>
+          </div>
+        
+        <div class="event-item">
+          <strong>Wer tritt auf?</strong>
+        <p>Die Tanzschule „LELYA DANCE“ und die Gesangsschule „MUSIC WORLD“ im Verein „FANTASY“</p></div></div>
+        
+        <div class="event-description">
+          <p>„Planet der Sterne“ — ein Ort, an dem Musik und Tanz Herzen vereinen, an dem sich Kinder und Erwachsene, Gesangs- und Tanz-Talente treffen, um Ihnen Freude, Energie und Inspiration zu schenken!</p>
+          <p>Unser Konzert ist dem Internationalen Kindertag gewidmet — einem Fest des Lebens, der Kunst, der Kraft, der Einheit und der Hoffnung. Möge jedes Lied und jeder Tanz einen neuen Stern auf unserem Planeten der Sterne zum Leuchten bringen!</p>
+        </div>
+        
+        <div class="free-entry">
+          <p><strong>Eintritt frei!</strong></p>
+        </div>
+        
+        <p class="closing-text">„Planet der Sterne“ — Gesang und Tanz in einer Umlaufbahn, ein Sternbild von Kinder- und Erwachsenenträumen…</p>
+      </section>
+      
+  
+  
+
+  <section id="program" class="section fade-in">
+    <h2>Aufführung & Programm</h2>
+    <img src="C:/Users/isych/Desktop/lelyadance/afisha.jpg" alt="Aufführung Programm" class="poster">
+  </section>
+
+  <section id="location" class="section fade-in">
+    <h2>Ort & Karte</h2>
+    <p><strong>Kleine Flurstraße 11, 42275 Wuppertal</strong></p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.1239382655015!2d7.192115176655038!3d51.26666117234666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8e4e52c90d7b5%3A0xdea06cdd0b2defea!2sKleine%20Flurstra%C3%9Fe%2011%2C%2042275%20Wuppertal%2C%20Deutschland!5e0!3m2!1sde!2sde!4v1715457642523!5m2!1sde!2sde" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="follow-title">Folgen Sie uns:</p>
+    <div class="socials">
+      <div class="social-column">
+        <a href="https://www.instagram.com/lelyadance.studio">
+          <i class="fab fa-instagram"></i> 
+          <span>@lelyadance.studio</span>
+        </a>
+        <a href="https://www.instagram.com/fantasy.zentrum">
+          <i class="fab fa-instagram"></i> 
+          <span>@fantasy.zentrum</span>
+        </a>
+        <a href="https://www.instagram.com/music.world.nrw">
+          <i class="fab fa-instagram"></i> 
+          <span>@music.world.nrw</span>
+        </a>
+      </div>
+  
+      <div class="social-column">
+        <a href="https://www.facebook.com/share/1A7Kovq2Fn/?mibextid=wwXIfr">
+          <i class="fab fa-facebook"></i>
+          <span>@Lelyadance</span>
+        </a>
+        <a href="https://www.facebook.com/share/15FLUDMswP/?mibextid=wwXIfr">
+          <i class="fab fa-facebook"></i>
+          <span>@fantasy.zentrum</span>
+        </a>
+        <a href="https://www.facebook.com/share/1C28h8XmRd/?mibextid=wwXIfr">
+          <i class="fab fa-facebook"></i>
+          <span>@music.world.nrw</span>
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2025 Sommerkonzert Wuppertal</p>
+  </footer>
+  
+  
+  
+
+<script>
+// Smooth scroll animation
+const navLinks = document.querySelectorAll('.nav a');
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Fade-in animation on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('in-view');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(section => {
+  observer.observe(section);
+});
+</script>
+
+</body>
+</html>
