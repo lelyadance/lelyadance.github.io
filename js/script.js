@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (select.value === "de") {
       window.location.href = "../de/index.html";
     } else if (select.value === "ua") {
-      window.location.href = "../ua/index.html";
+      window.location.href = "../index.html";
     }else if (select.value === "ru") {
       window.location.href = "../ru/index.html";
     }
