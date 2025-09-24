@@ -170,14 +170,14 @@ body {
 @media (max-width: 480px) {
   .ballerina-img {
     width: 50vw;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: 43%;
   }
   .ballerina-wrapper-ru {
-    margin-bottom: -10%;
+    margin-bottom: -50%;
   }
   .ballerina-wrapper-de {
-    margin-bottom: -10%;
+    margin-bottom: -50%;
   }
   .ballerina-wrapper-ua {
     margin-bottom: -50%;
