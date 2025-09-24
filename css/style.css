@@ -318,22 +318,22 @@ body {
 @media (max-width: 390px) {
   .ballerina-img {
     width: 50vw;
-    margin-top: -30%;
+    margin-top: 20%;
     margin-left: 50%;
   }
   .uaballerina-img {
     width: 50vw;
-    margin-top: -28%;
+    margin-top: 10%;
     margin-left: 45%;
   }
   .ballerina-wrapper-ua {
-    margin-bottom: -80%;
+    margin-bottom: -50%;
   }
   .ballerina-wrapper-ru {
-    margin-bottom: -95%;
+    margin-bottom: -50%;
   }
   .ballerina-wrapper-de {
-    margin-bottom: -95%;
+    margin-bottom: -50%;
   }
   .uaspeech-bubble {
     position: absolute;
