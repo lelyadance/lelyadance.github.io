@@ -69,7 +69,7 @@ const translations = {
         "title-pre": "ПРИГЛАШАЕМ НА",
         "subtitle": "ТАНЦЕВАЛЬНО-ТЕАТРАЛИЗОВАННЫЙ СПЕКТАКЛЬ",
         "main-title": "«Леля в стране чудес»",
-        "description": "Авторская рождественская история о мечте! ✨",
+        "description": "Авторская рождественская история о мечте!",
         "feature-1": " - Невероятно яркие танцевальные постановки",
         "feature-2": " - Волшебные костюмы",
         "feature-3": " - Красочные декорации",
@@ -89,7 +89,7 @@ const translations = {
         "title-pre": "WIR LADEN EIN ZU",
         "subtitle": "TANZ- UND TANZTHEATERSTÜCK",
         "main-title": "«Lelya im Zauberland»",
-        "description": "Eine zauberhafte Weihnachtsgeschichte! ✨",
+        "description": "Eine zauberhafte Weihnachtsgeschichte!",
         "feature-1": " - Unglaublich bunte Tanzszenen",
         "feature-2": " - Zauberhafte Kostüme",
         "feature-3": " - Farbenfrohe Bühnenbilder",
@@ -109,7 +109,7 @@ const translations = {
         "title-pre": "ЗАПРОШУЕМО НА",
         "subtitle": "ТАНЦЮВАЛЬНО-ТЕАТРАЛИЗОВАНУ ВИСТАВУ",
         "main-title": "«Леля в країні чудес»",
-        "description": "Авторська різдвяна історія про мрію! ✨",
+        "description": "Авторська різдвяна історія про мрію!",
         "feature-1": " - Неймовірно яскраві танцювальні постановки",
         "feature-2": " - Чарівні костюми",
         "feature-3": " - Яскраві декорації",
@@ -171,6 +171,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
