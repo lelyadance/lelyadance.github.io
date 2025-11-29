@@ -33,17 +33,12 @@ let player;
 
 function onYouTubeIframeAPIReady() {
     const block = document.getElementById("yt-player");
-    if (!block) return console.error("YT block not found");
-
-    const videoId = block.dataset.videoId; // должно быть tzkJDBCB6-k
-    console.log("Video ID:", videoId);
+    const videoId = "tzkJDBCB6-k"; // <- прямо тут прописываем ID
 
     const thumb = block.querySelector(".yt-thumb");
     const playBtn = block.querySelector(".yt-play");
 
     block.addEventListener("click", () => {
-        if (!videoId) return console.error("Video ID is missing");
-
         if (thumb) thumb.style.display = "none";
         if (playBtn) playBtn.style.display = "none";
 
@@ -59,6 +54,7 @@ function onYouTubeIframeAPIReady() {
         });
     });
 }
+
 
 
 
@@ -169,6 +165,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
