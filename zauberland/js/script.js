@@ -33,12 +33,16 @@ let player;
 
 function onYouTubeIframeAPIReady() {
     const block = document.getElementById("yt-player");
+    if (!block) return console.error("YT block not found");
+
     const videoId = block.dataset.videoId;
+    if (!videoId) return console.error("Video ID is missing");
+
     const thumb = block.querySelector(".yt-thumb");
     const playBtn = block.querySelector(".yt-play");
 
-    function playVideo() {
-        // Скрываем превью и кнопку
+    block.addEventListener("click", () => {
+        // Скрываем превью и кнопку, но не стираем контейнер
         if (thumb) thumb.style.display = "none";
         if (playBtn) playBtn.style.display = "none";
 
@@ -49,16 +53,12 @@ function onYouTubeIframeAPIReady() {
                 controls: 1,
                 rel: 0,
                 modestbranding: 1,
-                origin: window.location.origin // вот это важно для GitHub Pages
+                origin: window.location.origin
             }
         });
-    }
-
-    // Клик по блоку, превью или кнопке запускает видео
-    block.addEventListener("click", playVideo);
-    if (thumb) thumb.addEventListener("click", playVideo);
-    if (playBtn) playBtn.addEventListener("click", playVideo);
+    });
 }
+
 
 const translations = {
     ru: {
@@ -167,5 +167,6 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
