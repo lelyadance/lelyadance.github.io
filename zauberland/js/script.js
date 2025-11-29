@@ -25,6 +25,7 @@ function createSnowflake(layerId, count){
         setTimeout(()=>snow.remove(), duration*1000+200);
     }
 }
+// Загружаем API YouTube
 let tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 document.body.appendChild(tag);
@@ -35,21 +36,27 @@ function onYouTubeIframeAPIReady() {
     const block = document.getElementById("yt-player");
     const videoId = block.dataset.videoId;
 
-    const thumb = block.querySelector(".yt-thumb");
-    const playBtn = block.querySelector(".yt-play");
-
     block.addEventListener("click", () => {
-        if (thumb) thumb.remove();     // полностью удаляем превью
-        if (playBtn) playBtn.remove(); // удаляем кнопку
+        // Убираем превью и кнопку
+        const thumb = block.querySelector(".yt-thumb");
+        const playBtn = block.querySelector(".yt-play");
+        if (thumb) thumb.remove();
+        if (playBtn) playBtn.remove();
 
+        // Создаем плеер
         player = new YT.Player(block, {
             videoId: videoId,
-            playerVars: { autoplay: 1, controls: 1, rel: 0, modestbranding: 1, origin: window.location.origin },
-            width: "100%",
-            height: "100%"
+            playerVars: {
+                autoplay: 1,
+                controls: 1,
+                rel: 0,
+                modestbranding: 1,
+                origin: window.location.origin
+            }
         });
     });
 }
+
 
 
 
@@ -163,6 +170,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
