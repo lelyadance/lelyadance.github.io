@@ -68,7 +68,7 @@ const translations = {
         "detail-place-value": "Rudolf-Steiner-Schule Wuppertal\nSchluchtstrasse 21, 42285 Wuppertal",
         "title-video": "Видео о мероприятии",
         "register-btn": "Регистрация",
-        "poster": "img/afisha.png"
+        "poster": "img/afisha.PNG"
     },
     de: {
         "title-pre": "WIR LADEN EIN ZU",
@@ -88,7 +88,7 @@ const translations = {
         "detail-place-value": "Rudolf-Steiner-Schule Wuppertal\nSchluchtstrasse 21, 42285 Wuppertal",
         "title-video": "Video über die Veranstaltung",
         "register-btn": "Registrierung",
-        "poster": "img/afisha-de.png"
+        "poster": "img/afisha-de.PNG"
     },
     ua: {
         "title-pre": "ЗАПРОШУЕМО НА",
@@ -108,7 +108,7 @@ const translations = {
         "detail-place-value": "Rudolf-Steiner-Schule Wuppertal\nSchluchtstrasse 21, 42285 Wuppertal",
         "title-video": "Відео про подію",
         "register-btn": "Реєстрація",
-        "poster": "img/afisha-ua.png"
+        "poster": "img/afisha-ua.PNG"
     }
 };
 
@@ -156,3 +156,4 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
