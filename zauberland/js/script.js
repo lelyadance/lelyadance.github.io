@@ -34,19 +34,30 @@ let player;
 function onYouTubeIframeAPIReady() {
     const block = document.getElementById("yt-player");
     const videoId = block.dataset.videoId;
+    const thumb = block.querySelector(".yt-thumb");
+    const playBtn = block.querySelector(".yt-play");
 
-    block.addEventListener("click", () => {
-        block.innerHTML = ""; // убираем превью
+    function playVideo() {
+        // Скрываем превью и кнопку
+        if (thumb) thumb.style.display = "none";
+        if (playBtn) playBtn.style.display = "none";
 
         player = new YT.Player("yt-player", {
             videoId: videoId,
             playerVars: {
                 autoplay: 1,
                 controls: 1,
-                rel: 0
+                rel: 0,
+                modestbranding: 1,
+                origin: window.location.origin // вот это важно для GitHub Pages
             }
         });
-    });
+    }
+
+    // Клик по блоку, превью или кнопке запускает видео
+    block.addEventListener("click", playVideo);
+    if (thumb) thumb.addEventListener("click", playVideo);
+    if (playBtn) playBtn.addEventListener("click", playVideo);
 }
 
 const translations = {
@@ -156,4 +167,5 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
