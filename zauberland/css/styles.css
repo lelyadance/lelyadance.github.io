@@ -355,19 +355,34 @@ body::after {
     flex-wrap: wrap;
     margin: 34px auto;
 }
+.detail-card h3 {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(255, 215, 130, 0.15);
+    border-radius: 10px;
+    color: #ffd76f;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(255,215,130,0.4);
+    margin-bottom: 12px;
+}
 .detail-card {
     width: 260px;
     padding: 18px;
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(0,20,40,0.5); 
+    border: 1px solid rgba(255,215,130,0.15);
+
     backdrop-filter: blur(8px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+    box-shadow: 0 8px 30px rgba(255,215,130,0.2);
+
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    color: #f5f8ff;
-    text-shadow: 0 0 3px rgba(255,255,255,0.2);
+    box-shadow: 0 8px 30px rgba(255,215,130,0.2);
+ /* светло-голубой текст */
+
+text-shadow: 0 0 8px rgba(255,215,130,0.3);
+
 }
 
 /* Постер */
@@ -466,6 +481,7 @@ body::after {
     .detail-card { width: 92%; }
     .poster-img { max-width: 80%; }
 }
+
 
 
 
