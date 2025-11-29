@@ -39,20 +39,24 @@ function onYouTubeIframeAPIReady() {
     const playBtn = block.querySelector(".yt-play");
 
     block.addEventListener("click", () => {
-        if (thumb) thumb.style.display = "none";
-        if (playBtn) playBtn.style.display = "none";
+    const thumb = block.querySelector(".yt-thumb");
+    const playBtn = block.querySelector(".yt-play");
 
-        player = new YT.Player("yt-player", {
-            videoId: videoId,
-            playerVars: {
-                autoplay: 1,
-                controls: 1,
-                rel: 0,
-                modestbranding: 1,
-                origin: window.location.origin
-            }
-        });
+    if (thumb) thumb.style.display = "none";
+    if (playBtn) playBtn.style.display = "none";
+
+    player = new YT.Player("yt-player", {
+        videoId: "tzkJDBCB6-k",
+        playerVars: {
+            autoplay: 1,
+            controls: 1,
+            rel: 0,
+            modestbranding: 1,
+            origin: window.location.origin
+        }
     });
+});
+
 }
 
 
@@ -165,6 +169,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
