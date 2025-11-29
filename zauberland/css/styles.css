@@ -313,12 +313,40 @@ body::after {
 }
 
 .description {
-    font-size: 22px;
-    margin-bottom: 12px;
-    line-height: 1.7;
-    text-align: center;
-    color: #f0f6ff;
-    text-shadow: 0 0 3px rgba(255,255,255,0.15);
+    color: #ffe066;
+    font-size: 28px;
+    font-weight: 700;
+
+    text-shadow:
+        0 0 4px rgba(255, 230, 120, 0.6),
+        0 0 8px rgba(255, 210, 60, 0.5),
+        0 0 14px rgba(255, 190, 40, 0.4);
+
+    animation: glowPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0% {
+        text-shadow:
+            0 0 3px rgba(255, 220, 120, 0.35),
+            0 0 6px rgba(255, 200, 60, 0.3),
+            0 0 10px rgba(255, 180, 40, 0.25);
+        opacity: 0.9;
+    }
+    50% {
+        text-shadow:
+            0 0 6px rgba(255, 240, 140, 0.7),
+            0 0 12px rgba(255, 220, 80, 0.6),
+            0 0 20px rgba(255, 200, 60, 0.5);
+        opacity: 1;
+    }
+    100% {
+        text-shadow:
+            0 0 3px rgba(255, 220, 120, 0.35),
+            0 0 6px rgba(255, 200, 60, 0.3),
+            0 0 10px rgba(255, 180, 40, 0.25);
+        opacity: 0.9;
+    }
 }
 
 /* Список особенностей */
@@ -481,6 +509,7 @@ text-shadow: 0 0 8px rgba(255,215,130,0.3);
     .detail-card { width: 92%; }
     .poster-img { max-width: 80%; }
 }
+
 
 
 
