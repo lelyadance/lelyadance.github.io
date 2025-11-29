@@ -42,9 +42,10 @@ function onYouTubeIframeAPIReady() {
         const playBtn = block.querySelector(".yt-play");
         if (thumb) thumb.remove();
         if (playBtn) playBtn.remove();
-
+        const iframeContainer = block.querySelector(".yt-iframe-container");
+        
         // Создаем плеер
-        player = new YT.Player(block, {
+        player = new YT.Player(iframeContainer, {
             videoId: videoId,
             playerVars: {
                 autoplay: 1,
@@ -170,6 +171,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
