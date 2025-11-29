@@ -33,34 +33,24 @@ let player;
 
 function onYouTubeIframeAPIReady() {
     const block = document.getElementById("yt-player");
-    const videoId = "tzkJDBCB6-k"; // прямо здесь ID
+    const videoId = block.dataset.videoId;
 
     const thumb = block.querySelector(".yt-thumb");
     const playBtn = block.querySelector(".yt-play");
 
     block.addEventListener("click", () => {
-        // Скрываем превью и кнопку
-        if (thumb) thumb.style.display = "none";
-        if (playBtn) playBtn.style.display = "none";
+        if (thumb) thumb.remove();     // полностью удаляем превью
+        if (playBtn) playBtn.remove(); // удаляем кнопку
 
-        // Убираем всё содержимое блока (чтобы плеер не накладывался)
-        block.innerHTML = "";
-
-        // Создаём iframe через API
         player = new YT.Player(block, {
-            height: "360",   // явно задаём высоту
-            width: "640",    // явно задаём ширину
             videoId: videoId,
-            playerVars: {
-                autoplay: 1,
-                controls: 1,
-                rel: 0,
-                modestbranding: 1,
-                origin: window.location.origin
-            }
+            playerVars: { autoplay: 1, controls: 1, rel: 0, modestbranding: 1, origin: window.location.origin },
+            width: "100%",
+            height: "100%"
         });
     });
 }
+
 
 
 
@@ -173,6 +163,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
