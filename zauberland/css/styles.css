@@ -26,7 +26,10 @@ body::after {
     background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%);
     z-index: 1;
 }
-
+.content-wrap {
+    position: relative;
+    z-index: 20;
+}
 /* ===== Снежинки ===== */
 .snow-layer {
     position: fixed;
@@ -48,7 +51,7 @@ body::after {
     color: white;
     text-shadow: 0 0 8px rgba(255,255,255,0.8);
     font-size: var(--size);
-    opacity: var(--opacity);
+    opacity: 0.1;
     animation: fallAll var(--duration) linear forwards;
 }
 
@@ -509,6 +512,7 @@ text-shadow: 0 0 8px rgba(255,215,130,0.3);
     .detail-card { width: 92%; }
     .poster-img { max-width: 80%; }
 }
+
 
 
 
