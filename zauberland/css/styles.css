@@ -354,6 +354,7 @@ body::after {
 
 /* Список особенностей */
 .features {
+    font-family: 'Prata', serif;
     list-style: none;
     padding: 0;
     margin: 0 auto 12px;
@@ -371,11 +372,27 @@ body::after {
 
 /* Акцентные тексты */
 .big-text {
-    font-size: 26px;
-    margin-top: 18px;
-    font-weight: 500;
-    color: var(--gold);
-    text-shadow: 0 0 4px rgba(255,215,130,0.6);
+    font-family: 'Prata', serif;
+    font-size: 28px;
+    line-height: 1.45;
+    background: linear-gradient(
+        90deg,
+        #fff4d2 0%,
+        #ffd17a 25%,
+        #ffbf4d 50%,
+        #ffe7b0 75%,
+        #fff4d2 100%
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation: goldFlow 6s linear infinite;
+}
+
+@keyframes goldFlow {
+    0% { background-position: 0% }
+    100% { background-position: 300% }
 }
 
 /* Детали */
@@ -512,6 +529,7 @@ text-shadow: 0 0 8px rgba(255,215,130,0.3);
     .detail-card { width: 92%; }
     .poster-img { max-width: 80%; }
 }
+
 
 
 
