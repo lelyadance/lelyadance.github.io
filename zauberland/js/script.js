@@ -74,7 +74,7 @@ const translations = {
         "feature-2": " - Волшебные костюмы",
         "feature-3": " - Красочные декорации",
         "feature-4": " - Профессиональная большая сцена",
-        "big-text": "На сцене более 50 участников: дети из танцевальной студии, взрослые артисты и педагоги, которые вместе создадут праздничное чудо! 🎄 Погрузитесь в атмосферу волшебства, сказки и танца — и станьте частью рождественской магии вместе с Lelya Dance!",
+        "big-text": "На сцене более 50 участников: дети из танцевальной студии, взрослые артисты и педагоги, которые вместе создадут праздничное чудо! Погрузитесь в атмосферу волшебства, сказки и танца — и станьте частью рождественской магии вместе с Lelya Dance!",
         "detail-date": "Дата",
         "detail-date-value": "20 декабря 2025",
         "detail-time": "Время",
@@ -94,7 +94,7 @@ const translations = {
         "feature-2": " - Zauberhafte Kostüme",
         "feature-3": " - Farbenfrohe Bühnenbilder",
         "feature-4": " - Professionelle große Bühne",
-        "big-text": "Mehr als 50 Teilnehmer auf der Bühne: Kinder aus der Tanzschule, erwachsene Künstler und Lehrer, die gemeinsam ein festliches Wunder erschaffen! 🎄 Tauchen Sie ein in die Atmosphäre von Zauber, Märchen und Tanz – und werden Sie Teil der Weihnachtsmagie mit Lelya Dance!",
+        "big-text": "Mehr als 50 Teilnehmer auf der Bühne: Kinder aus der Tanzschule, erwachsene Künstler und Lehrer, die gemeinsam ein festliches Wunder erschaffen! Tauchen Sie ein in die Atmosphäre von Zauber, Märchen und Tanz – und werden Sie Teil der Weihnachtsmagie mit Lelya Dance!",
         "detail-date": "Datum",
         "detail-date-value": "20. Dezember 2025",
         "detail-time": "Zeit",
@@ -114,7 +114,7 @@ const translations = {
         "feature-2": " - Чарівні костюми",
         "feature-3": " - Яскраві декорації",
         "feature-4": " - Професійна велика сцена",
-        "big-text": "На сцені понад 50 учасників: діти з танцювальної студії, дорослі артисти та педагоги, які разом створять святкове диво! 🎄 Пориньте в атмосферу чарів, казки та танцю — і станьте частиною різдвяної магії разом з Lelya Dance!",
+        "big-text": "На сцені понад 50 учасників: діти з танцювальної студії, дорослі артисти та педагоги, які разом створять святкове диво! Пориньте в атмосферу чарів, казки та танцю — і станьте частиною різдвяної магії разом з Lelya Dance!",
         "detail-date": "Дата",
         "detail-date-value": "20 грудня 2025",
         "detail-time": "Час",
@@ -171,6 +171,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
