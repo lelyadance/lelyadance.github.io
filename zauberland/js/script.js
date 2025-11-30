@@ -106,8 +106,8 @@ const translations = {
         "poster": "img/afisha-de.PNG"
     },
     ua: {
-        "title-pre": "ЗАПРОШУЕМО НА",
-        "subtitle": "ТАНЦЮВАЛЬНО-ТЕАТРАЛИЗОВАНУ ВИСТАВУ",
+        "title-pre": "ЗАПРОШУЄМО НА",
+        "subtitle": "ТАНЦЮВАЛЬНО-ТЕАТРАЛІЗОВАНУ ВИСТАВУ",
         "main-title": "«Леля в країні чудес»",
         "description": "Авторська різдвяна історія про мрію!",
         "feature-1": " - Неймовірно яскраві танцювальні постановки",
@@ -171,6 +171,7 @@ document.addEventListener('click', e => {
 setInterval(()=>createSnowflake("snow-container-back",3),700);
 setInterval(()=>createSnowflake("snow-container",4),550);
 setInterval(()=>createSnowflake("snow-container-front",3),450);
+
 
 
 
